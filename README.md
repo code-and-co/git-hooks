@@ -21,7 +21,7 @@ Format: #[project]-[issue number][message]
 ```
 rm .git/hooks/commit-msg.sample
 
-curl https://raw.githubusercontent.com/Sey1000/git-hooks/master/jira-commit-msg.sh > .git/hooks/commit-msg
+curl https://github.com/code-and-co/git-hooks/blob/master/jira-commit-msg.sh > .git/hooks/commit-msg
 
 chmod +x .git/hooks/commit-msg
 ```
