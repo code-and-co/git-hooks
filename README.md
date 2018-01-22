@@ -36,7 +36,7 @@ Reference: https://medium.com/@shettyrahul8june/how-to-run-eslint-using-pre-comm
 ```
 rm .git/hooks/pre-commit.sample
 
-curl https://raw.githubusercontent.com/Sey1000/git-hooks/master/pre-commit-eslint.sh > .git/hooks/pre-commit
+curl https://github.com/code-and-co/git-hooks/blob/master/pre-commit-eslint.sh > .git/hooks/pre-commit
 
 chmod +x .git/hooks/pre-commit
 ```
