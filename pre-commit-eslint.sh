@@ -11,15 +11,15 @@ PASS=true
 echo "\nValidating Javascript:\n"
 
 # Check for eslint
-which eslint &> /dev/null
-if [[ "$?" == 1 ]]; then
-  echo "\t\033[41mPlease install ESlint\033[0m"
-  exit 1
-fi
+#which eslint &> /dev/null
+#if [[ "$?" == 1 ]]; then
+#  echo "\t\033[41mPlease install ESlint\033[0m"
+#  exit 1
+#fi
 
 for FILE in $STAGED_FILES
 do
-  eslint "$FILE"
+  yarn eslint "$FILE"
 
   if [[ "$?" == 0 ]]; then
     echo "\t\033[32mESLint Passed: $FILE\033[0m"
